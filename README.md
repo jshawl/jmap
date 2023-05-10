@@ -1,6 +1,10 @@
 
 ## Run Tests
 
+```
+rake
+```
+
 ## Local Development
 
 ```
