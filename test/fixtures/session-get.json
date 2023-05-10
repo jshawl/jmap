@@ -1,0 +1,55 @@
+{
+  "uploadUrl": "https://api.fastmail.com/jmap/upload/{accountId}/",
+  "accounts": {
+      "u000000e0": {
+          "accountCapabilities": {
+              "urn:ietf:params:jmap:core": {},
+              "urn:ietf:params:jmap:mail": {
+                  "maxMailboxDepth": null,
+                  "maxMailboxesPerEmail": 1000,
+                  "maxSizeMailboxName": 490,
+                  "mayCreateTopLevelMailbox": true,
+                  "emailQuerySortOptions": [
+                      "receivedAt",
+                      "from",
+                      "to",
+                      "subject",
+                      "size",
+                      "header.x-spam-score"
+                  ],
+                  "maxSizeAttachmentsPerEmail": 50000000
+              }
+          },
+          "name": "example@example.com",
+          "userId": "user-00000000",
+          "isPersonal": true,
+          "isReadOnly": false
+      }
+  },
+  "username": "example@example.com",
+  "primaryAccounts": {
+      "urn:ietf:params:jmap:mail": "u000000e0",
+      "urn:ietf:params:jmap:core": "u000000e0"
+  },
+  "state": "cyrus-000000;p-0000000000",
+  "capabilities": {
+      "urn:ietf:params:jmap:mail": {},
+      "urn:ietf:params:jmap:core": {
+          "maxCallsInRequest": 50,
+          "maxObjectsInSet": 4096,
+          "maxConcurrentUpload": 10,
+          "maxObjectsInGet": 4096,
+          "collationAlgorithms": [
+              "i;ascii-numeric",
+              "i;ascii-casemap",
+              "i;octet"
+          ],
+          "maxSizeUpload": 250000000,
+          "maxSizeRequest": 10000000,
+          "maxConcurrentRequests": 10
+      }
+  },
+  "downloadUrl": "https://www.fastmailusercontent.com/jmap/download/{accountId}/{blobId}/{name}?type={type}",
+  "apiUrl": "https://api.fastmail.com/jmap/api/",
+  "eventSourceUrl": "https://api.fastmail.com/jmap/event/"
+}

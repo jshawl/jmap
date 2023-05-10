@@ -7,6 +7,7 @@ Gem::Specification.new do |s|
   s.email       = "jesse@jesse.sh"
   s.files       = ["lib/jmap.rb"]
   s.homepage    =
-    "https://rubygems.org/gems/hola"
+    "https://rubygems.org/gems/jmap"
   s.license       = "MIT"
+  s.add_development_dependency "webmock", "~>3.18.1"
 end
