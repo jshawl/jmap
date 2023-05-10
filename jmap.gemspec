@@ -9,5 +9,6 @@ Gem::Specification.new do |s|
   s.homepage    =
     "https://rubygems.org/gems/jmap"
   s.license       = "MIT"
+  spec.add_development_dependency 'rake', '~> 13.0'
   s.add_development_dependency "webmock", "~>3.18.1"
 end
